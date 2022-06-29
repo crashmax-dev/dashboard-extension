@@ -1,13 +1,21 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { MemoryRouter } from 'react-router-dom'
+import { Layout } from './components/layout'
 import { AppRoutes } from './routes'
+import { themeConfig } from './theme'
 
-function NewTab() {
+const theme = extendTheme({
+  config: themeConfig
+})
+
+const NewTab = () => {
   return (
-    <ChakraProvider>
-      <MemoryRouter>
-        <AppRoutes />
-      </MemoryRouter>
+    <ChakraProvider theme={theme}>
+      <Layout>
+        <MemoryRouter>
+          <AppRoutes />
+        </MemoryRouter>
+      </Layout>
     </ChakraProvider>
   )
 }

@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 
-export function SettingsPage() {
+export const SettingsPage = () => {
   const navigate = useNavigate()
 
   return (

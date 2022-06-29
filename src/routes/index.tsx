@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { HomePage } from './home'
 import { SettingsPage } from './settings'
 
-export function AppRoutes() {
+export const AppRoutes = () => {
   return (
     <Routes>
       <Route
