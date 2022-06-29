@@ -1,0 +1,7 @@
+.front-page-carousel {
+  display: none;
+}
+
+div.side-nav-section[aria-label='Рекомендуемые каналы'] {
+  display: none !important;
+}
