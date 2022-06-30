@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Avatar,
@@ -13,7 +14,6 @@ import {
   MenuList,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useNavigate } from 'react-router-dom'
 import { ThemeSwitcher } from './theme-switcher'
 
 export const Header = () => {

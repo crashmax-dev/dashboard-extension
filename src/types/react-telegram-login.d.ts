@@ -22,6 +22,8 @@ declare module 'react-telegram-login' {
     widgetVersion?: number
   }
 
-  const TelegramLoginButton: (props: TelegramLoginButtonProps) => React.FC<TelegramLoginButtonProps>
+  const TelegramLoginButton: (
+    props: TelegramLoginButtonProps
+  ) => React.FC<TelegramLoginButtonProps>
   export default telegramAuth
 }

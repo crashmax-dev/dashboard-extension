@@ -1,10 +1,10 @@
 import React from 'react'
-import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react'
 import { MemoryRouter } from 'react-router-dom'
+import { UserProvider } from '~contexts/user'
+import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react'
 import { Layout } from './components/layout'
 import { AppRoutes } from './routes'
 import { themeConfig } from './theme'
-import { UserProvider } from '~contexts/user'
 
 const theme = extendTheme({
   config: themeConfig

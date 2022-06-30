@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@chakra-ui/icons': ^2.0.2
   '@chakra-ui/react': ^2.2.1
-  '@crashmax/prettier-config': ^1.1.0
+  '@crashmax/prettier-config': ^1.1.1
   '@emotion/react': ^11.9.3
   '@emotion/styled': ^11.9.3
   '@plasmohq/storage': 0.6.0
@@ -35,7 +35,7 @@ dependencies:
   react-telegram-login: 1.1.2
 
 devDependencies:
-  '@crashmax/prettier-config': 1.1.0_xpdg5htbptjlk4mfy6iiphmdgy
+  '@crashmax/prettier-config': 1.1.1_xpdg5htbptjlk4mfy6iiphmdgy
   '@types/chrome': 0.0.190
   '@types/node': 17.0.43
   '@types/react': 18.0.12
@@ -1074,8 +1074,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@crashmax/prettier-config/1.1.0_xpdg5htbptjlk4mfy6iiphmdgy:
-    resolution: {integrity: sha512-Xys4tkd26AGgG3+ShOBLBZaqj80N4beodUoskh9D6a5QbxpNC1qzxVO8D1a3BuytFMWce2JAdGksgRsESk+hxA==}
+  /@crashmax/prettier-config/1.1.1_xpdg5htbptjlk4mfy6iiphmdgy:
+    resolution: {integrity: sha512-4y7FwkH/NqFjWCsNmhSd7mehEJCq0diwFV7X7jGpXZzoQE/bdK7KuRXZ4F/leIUvWBUYhbUc2CvmksSCEoDb9Q==}
     peerDependencies:
       '@trivago/prettier-plugin-sort-imports': ^3.2.0
       prettier: ^2.7.1
