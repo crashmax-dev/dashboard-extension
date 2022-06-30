@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@chakra-ui/icons': ^2.0.2
   '@chakra-ui/react': ^2.2.1
   '@crashmax/prettier-config': ^1.1.0
   '@emotion/react': ^11.9.3
@@ -16,9 +17,11 @@ specifiers:
   react-dom: 18.2.0
   react-icons: ^4.4.0
   react-router-dom: ^6.3.0
+  react-telegram-login: ^1.1.2
   typescript: 4.7.4
 
 dependencies:
+  '@chakra-ui/icons': 2.0.2_smtw3k2wuexenqj33awaujbhle
   '@chakra-ui/react': 2.2.1_bgvuvzq65j53t4qculh6d6554q
   '@emotion/react': 11.9.3_cl4bjte3qujwsw253d2t6olgyu
   '@emotion/styled': 11.9.3_5x4wht2bmpagxfezlkd5nuuop4
@@ -29,6 +32,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
+  react-telegram-login: 1.1.2
 
 devDependencies:
   '@crashmax/prettier-config': 1.1.0_xpdg5htbptjlk4mfy6iiphmdgy
@@ -499,6 +503,18 @@ packages:
     dependencies:
       '@chakra-ui/system': 2.1.3_fdnqutfacy7v3gmlcm66flps3q
       '@chakra-ui/utils': 2.0.2
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons/2.0.2_smtw3k2wuexenqj33awaujbhle:
+    resolution: {integrity: sha512-UY7vP8E5pv2a4sd1SiezgVbmq1/tRfnehk6PatunrTvGMxQNhSKJJoiRI/wCtUfMoMz+yp9+ekc1ksJVCnokRg==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0-next.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.0.2_smtw3k2wuexenqj33awaujbhle
+      '@chakra-ui/system': 2.1.3_fdnqutfacy7v3gmlcm66flps3q
+      '@types/react': 18.0.12
       react: 18.2.0
     dev: false
 
@@ -4450,6 +4466,21 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.4.0
+    dev: false
+
+  /react-telegram-login/1.1.2:
+    resolution: {integrity: sha512-pDP+bvfaklWgnK5O6yvZnIwgky0nnYUU6Zhk0EjdMSkPsLQoOzZRsXIoZnbxyBXhi7346bsxMH+EwwJPTxClDw==}
+    dependencies:
+      react: 16.14.0
+    dev: false
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
     dev: false
 
   /react/18.2.0:

@@ -1,15 +1,11 @@
-import { Box } from "@chakra-ui/react"
-import { ThemeSwitcher } from "./theme-switcher"
+import { Box, Center } from '@chakra-ui/react'
+import { Header } from './header'
 
 export const Layout = ({ children }: React.PropsWithChildren) => {
   return (
-    <Box
-      display='flex'
-      flexDirection='column'
-      justifyContent='center'
-    >
-      <ThemeSwitcher />
-      {children}
+    <Box>
+      <Header />
+      <Center height="100vh">{children}</Center>
     </Box>
   )
 }
