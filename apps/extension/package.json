@@ -1,0 +1,41 @@
+{
+  "name": "extension",
+  "displayName": "Dashboard extension",
+  "version": "0.0.0",
+  "description": "A basic Plasmo extension.",
+  "author": "crashmax",
+  "scripts": {
+    "dev": "pnpm prebuild && plasmo dev",
+    "build": "pnpm prebuild && plasmo build",
+    "prebuild": "rm -rf build .plasmo build"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@plasmohq/storage": "0.6.0",
+    "framer-motion": "^6.3.16",
+    "plasmo": "0.44.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-telegram-login": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.190",
+    "@types/react": "18.0.12",
+    "@types/react-dom": "18.0.5"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "tabs",
+      "contextMenus",
+      "topSites"
+    ]
+  }
+}

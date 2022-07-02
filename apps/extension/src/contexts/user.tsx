@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { TelegramUserData } from 'react-telegram-login'
-import { Loader } from '~components/loader'
+import { Loader } from '~components/Loader'
 
 type User = Omit<TelegramUserData, 'hash'>
 

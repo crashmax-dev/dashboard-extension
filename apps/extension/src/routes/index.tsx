@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { AuthPage } from './auth'
 import { HomePage } from './home'
 import { SettingsPage } from './settings'
@@ -8,7 +8,7 @@ export const AppRoutes = () => {
     <Routes>
       <Route
         path="/"
-        element={<HomePage />}
+        element={<Navigate to="/auth" />}
       />
       <Route
         path="/settings"
