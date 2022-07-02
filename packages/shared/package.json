@@ -1,0 +1,15 @@
+{
+  "name": "@de/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./fetcher": "./dist/fetcher.js"
+  },
+  "scripts": {
+    "dev": "tsx",
+    "build": "tsc",
+    "prepare": "rm -rf dist && pnpm build"
+  }
+}

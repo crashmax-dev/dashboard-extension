@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import TelegramLoginButton from 'react-telegram-login'
 import { useUser } from '~contexts/user'
-import TelegramLoginWidget from '~features/telegram-login-widget'
 import { Center } from '@chakra-ui/react'
 
-export const AuthPage: React.FC = () => {
+// ERROR  | Failed to resolve '@de/telegram-login-widget'
+// import { TelegramLoginWidget } from '@de/telegram-login-widget'
+
+export const AuthPage = () => {
   const ref = useRef<HTMLDivElement>(null)
   const navigate = useNavigate()
   const { user, auth } = useUser()
@@ -26,14 +27,9 @@ export const AuthPage: React.FC = () => {
       p={8}
       ref={ref}
     >
-      <TelegramLoginWidget
+      {/* <TelegramLoginWidget
         botId=""
         onLogin={auth}
-      />
-      {/* <TelegramLoginButton
-        dataOnauth={auth}
-        botName="bot"
-        lang="en"
       /> */}
     </Center>
   )

@@ -1,7 +1,9 @@
+import { Loader } from '~components/Loader'
+
 export const HomePage = () => {
   return (
     <div>
-      <h1>home</h1>
+      <Loader />
     </div>
   )
 }

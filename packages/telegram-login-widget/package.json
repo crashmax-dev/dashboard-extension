@@ -1,0 +1,22 @@
+{
+  "name": "@de/telegram-login-widget",
+  "version": "1.0.0",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "rm -rf dist && pnpm build"
+  },
+  "dependencies": {
+    "@de/shared": "workspace:*",
+    "@de/telegram-login-widget": "workspace:^1.0.0",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "@de/shared": "workspace:*",
+    "react": "^18.2.0"
+  }
+}

@@ -1,11 +1,6 @@
 import type { Dispatch, SetStateAction } from 'react'
-import type { TelegramUserData } from 'react-telegram-login'
-import fetcher from '~helpers/fetcher'
-
-interface Popup {
-  window: Window | null
-  authFinished: boolean
-}
+import { fetcher } from '@de/shared'
+import type { Popup, TelegramUserData } from './types'
 
 export class TelegramAuth {
   public popup: Popup
@@ -62,7 +57,7 @@ export class TelegramAuth {
 
       try {
         data = JSON.parse(event.data)
-      } catch (e) {
+      } catch {
         data = {}
       }
 
