@@ -12,19 +12,21 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
+    "@de/shared": "workspace:^1.0.0",
     "@de/telegram-login-widget": "workspace:*",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@plasmohq/storage": "0.6.0",
+    "@fireworks-js/vanilla": "0.0.0-beta.1",
+    "@plasmohq/storage": "0.6.2",
     "framer-motion": "^6.3.16",
-    "plasmo": "0.44.0",
+    "plasmo": "0.45.1",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.190",
+    "@types/chrome": "0.0.191",
     "@types/react-dom": "18.0.5"
   },
   "manifest": {

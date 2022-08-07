@@ -30,14 +30,16 @@ importers:
     specifiers:
       '@chakra-ui/icons': ^2.0.2
       '@chakra-ui/react': ^2.2.1
+      '@de/shared': workspace:^1.0.0
       '@de/telegram-login-widget': workspace:*
       '@emotion/react': ^11.9.3
       '@emotion/styled': ^11.9.3
-      '@plasmohq/storage': 0.6.0
-      '@types/chrome': 0.0.190
+      '@fireworks-js/vanilla': 0.0.0-beta.1
+      '@plasmohq/storage': 0.6.2
+      '@types/chrome': 0.0.191
       '@types/react-dom': 18.0.5
       framer-motion: ^6.3.16
-      plasmo: 0.44.0
+      plasmo: 0.45.1
       react: ^18.2.0
       react-dom: 18.2.0
       react-icons: ^4.4.0
@@ -45,18 +47,20 @@ importers:
     dependencies:
       '@chakra-ui/icons': 2.0.2_smtw3k2wuexenqj33awaujbhle
       '@chakra-ui/react': 2.2.1_2gkyz5c4kepvvphfdowftlp5pe
+      '@de/shared': link:../../packages/shared
       '@de/telegram-login-widget': link:../../packages/telegram-login-widget
       '@emotion/react': 11.9.3_2sb3a56iojvze2npkgcccbebf4
       '@emotion/styled': 11.9.3_jamvl4wvj5sxnca575pii6imje
-      '@plasmohq/storage': 0.6.0_react@18.2.0
+      '@fireworks-js/vanilla': 0.0.0-beta.1
+      '@plasmohq/storage': 0.6.2_react@18.2.0
       framer-motion: 6.3.16_biqbaboplfbrettd7655fr4n2y
-      plasmo: 0.44.0
+      plasmo: 0.45.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-icons: 4.4.0_react@18.2.0
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
     devDependencies:
-      '@types/chrome': 0.0.190
+      '@types/chrome': 0.0.191
       '@types/react-dom': 18.0.5
 
   packages/telegram-login-widget:
@@ -1376,6 +1380,16 @@ packages:
       cross-spawn: 7.0.3
     dev: false
 
+  /@fireworks-js/helpers/0.0.0-beta.2:
+    resolution: {integrity: sha512-t+r2JiT6NVWwzU+QNfOOGOpIc8ZWDMg7W0c1huA/S9NXzAP7JFel3u7pIqKob7BIxg/Yfafvn4MCWdpWimtJpA==}
+    dev: false
+
+  /@fireworks-js/vanilla/0.0.0-beta.1:
+    resolution: {integrity: sha512-Ur5+NFANjn+txSxiqJk5H/3S6Yny6vlPX4TLuGd2EWxt6aOn6gGEt4h5D8JI1pY3jAjwhEQrhhcq48MkJ/D0aA==}
+    dependencies:
+      '@fireworks-js/helpers': 0.0.0-beta.2
+    dev: false
+
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
     engines: {node: '>=6.0.0'}
@@ -2660,8 +2674,8 @@ packages:
       - '@parcel/core'
     dev: false
 
-  /@plasmohq/storage/0.6.0_react@18.2.0:
-    resolution: {integrity: sha512-1xMyHXWiLFjbDJTCs3A9ogLHLOaalO0IMBiL30+nw6VZ9Vxqf9rxQsL9apXlFXa7FquOnJGWx3ZNnhRXxy+zRw==}
+  /@plasmohq/storage/0.6.2_react@18.2.0:
+    resolution: {integrity: sha512-9Usqjd32Jw3PGEoCJ40don1pbWk9iYG/xJk5byP6lgnklYOKCGsxayI2QSqoLX4tLkwD0AZ8vt+UZCv0/IvxbQ==}
     peerDependencies:
       react: ^16.8.6 || ^17 || ^18
     dependencies:
@@ -2778,8 +2792,8 @@ packages:
       '@types/responselike': 1.0.0
     dev: false
 
-  /@types/chrome/0.0.190:
-    resolution: {integrity: sha512-lCwwIBfaD+PhG62qFB46mIBpD+xBIa+PedNB24KR9YnmJ0Zn9h0OwP1NQBhI8Cbu1rKwTQHTxhs7GhWGyUvinw==}
+  /@types/chrome/0.0.191:
+    resolution: {integrity: sha512-hXYHJJ1Y265xKCw0o2Kz4CnR8aUhOMdyxK1AinET4EDr3fhpEMvOFDwdqz9LUX4syfTVYWb8w7vfC12s112ehg==}
     dependencies:
       '@types/filesystem': 0.0.32
       '@types/har-format': 1.2.8
@@ -2997,7 +3011,7 @@ packages:
   /base-x/3.0.9:
     resolution: {integrity: sha512-H7JU6iBHTal1gp56aKoaa//YUxEaAOUiydvrV/pILqIHXTtqxSkATOnDA2u+jZ/61sD+L/412+7kzXRtWukhpQ==}
     dependencies:
-      safe-buffer: 5.1.2
+      safe-buffer: 5.2.1
     dev: false
 
   /base64-js/1.5.1:
@@ -3105,7 +3119,7 @@ packages:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /caniuse-lite/1.0.30001361:
@@ -3119,7 +3133,7 @@ packages:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
       upper-case-first: 2.0.2
     dev: false
 
@@ -3157,7 +3171,7 @@ packages:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /chardet/0.7.0:
@@ -3268,7 +3282,7 @@ packages:
     resolution: {integrity: sha512-I2hSBi7Vvs7BEuJDr5dDHfzb/Ruj3FyvFyh7KLilAjNQw3Be+xgqUBA2W6scVEcL0hL1dwPRtIqEPVUCKkSsyQ==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
       upper-case: 2.0.2
     dev: false
 
@@ -3446,7 +3460,7 @@ packages:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /dotenv-expand/5.1.0:
@@ -3971,9 +3985,12 @@ packages:
       type-fest: 0.20.2
     dev: false
 
+  /globalyzer/0.1.0:
+    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
+    dev: false
+
   /globrex/0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
-    dev: true
 
   /got/12.1.0:
     resolution: {integrity: sha512-hBv2ty9QN2RdbJJMK3hesmSkFTjVIHyIDDbssCKnSmq62edGgImJWD10Eb1k77TiV1bxloxqcFAVK8+9pkhOig==}
@@ -4019,7 +4036,7 @@ packages:
     resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /hey-listen/1.0.8:
@@ -4433,7 +4450,7 @@ packages:
   /lower-case/2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /lowercase-keys/2.0.0:
@@ -4726,7 +4743,7 @@ packages:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /node-addon-api/3.2.1:
@@ -4836,7 +4853,7 @@ packages:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /parent-module/1.0.1:
@@ -4860,7 +4877,7 @@ packages:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /path-browserify/1.0.1:
@@ -4871,7 +4888,7 @@ packages:
     resolution: {integrity: sha512-qO4qCFjXqVTrcbPt/hQfhTQ+VhFsqNKOPtytgNKkKxSoEp3XPUQ8ObFuePylOIok5gjn69ry8XiULxCwot3Wfg==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /path-is-absolute/1.0.1:
@@ -4900,8 +4917,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /plasmo/0.44.0:
-    resolution: {integrity: sha512-uIvVjCYSY+cDd2T/RXnwkmYj4fAAfkxuDnPlhEimY9R8EqJZx6230n3rfamcQq5Md72mR6+BqR9hmj/EpVFMeQ==}
+  /plasmo/0.45.1:
+    resolution: {integrity: sha512-TdU148HItGU4xK/araCuH7oO2fOxPYN1tJsmE6Et4bRKI2y7/wkfvVleOlNK67lEeHDmY0TXz3UA4+H2mpcxzA==}
     hasBin: true
     dependencies:
       '@expo/spawn-async': 1.6.0
@@ -4925,6 +4942,7 @@ packages:
       node-object-hash: 2.3.10
       process: 0.11.10
       semver: 7.3.7
+      tiny-glob: 0.2.9
       typescript: 4.7.4
     transitivePeerDependencies:
       - cssnano
@@ -5322,7 +5340,7 @@ packages:
   /rxjs/7.5.5:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /safe-buffer/5.1.2:
@@ -5362,7 +5380,7 @@ packages:
     resolution: {integrity: sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
       upper-case-first: 2.0.2
     dev: false
 
@@ -5391,7 +5409,7 @@ packages:
     resolution: {integrity: sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /source-map-js/1.0.2:
@@ -5548,6 +5566,13 @@ packages:
   /timsort/0.3.0:
     resolution: {integrity: sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==}
 
+  /tiny-glob/0.2.9:
+    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
+    dependencies:
+      globalyzer: 0.1.0
+      globrex: 0.1.2
+    dev: false
+
   /tiny-invariant/1.2.0:
     resolution: {integrity: sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==}
     dev: false
@@ -5662,13 +5687,13 @@ packages:
   /upper-case-first/2.0.2:
     resolution: {integrity: sha512-514ppYHBaKwfJRK/pNC6c/OxfGa0obSnAl106u97Ed0I625Nin96KAjttZF6ZL3e1XLtphxnqrOi9iWgm+u+bg==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /upper-case/2.0.2:
     resolution: {integrity: sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: false
 
   /uri-js/4.4.1:
